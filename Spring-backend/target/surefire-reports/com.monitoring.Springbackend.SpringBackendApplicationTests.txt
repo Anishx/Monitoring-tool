@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.monitoring.Springbackend.SpringBackendApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.426 s <<< FAILURE! - in com.monitoring.Springbackend.SpringBackendApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scheduleChecks' defined in file [C:\Users\Aneesh.KrishnaR\Documents\WORKSPACE2022\Spring-backend\target\classes\com\monitoring\Springbackend\scheduler\ScheduleChecks.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleChecks': Exactly one of the 'cron', 'fixedDelay(String)', or 'fixedRate(String)' attributes is required
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'scheduleChecks': Exactly one of the 'cron', 'fixedDelay(String)', or 'fixedRate(String)' attributes is required
+
